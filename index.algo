@@ -1,0 +1,24 @@
+
+ALGORITHM 
+VAR
+    i,j,currentElement:INTEGER;
+    tab: ARRAY_OF INTEGER[]
+    BEGIN 
+    n = length of arr
+    FOR i FROM 1 TO tab.n-1 STEP 1  DO
+currentElement=tab[i];
+    j=i-1;
+    WHILE (j>=0 and tab[j]>currentElement) DO
+        
+        tab[j+1]=tab[j];
+j=j-1;
+tab[j+1]=currentElement; 
+    END_WHILE
+    
+    END_FOR
+    
+END
+
+
+
+
